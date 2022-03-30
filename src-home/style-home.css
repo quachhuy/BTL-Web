@@ -61,3 +61,38 @@ img{
 #img-product-con2:hover img{
     transform: scale(0.9);
 }
+#container3{
+    padding-top: 100px;
+}
+.title-con3 p{
+    text-align: center;
+    font-size: 27px;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
+}
+.title-con3{
+    padding-bottom: 100px;
+}
+#btn-con3{
+    color: white;
+    background-color: #6ABD45;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#name-product, #price p{
+    text-align: center;
+    font-size: 14px;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
+}
+#name-product{
+    padding-top: 10px;
+}
+#price{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
