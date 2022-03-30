@@ -18,47 +18,34 @@
       rel="stylesheet">
    <link rel="stylesheet" href="src-store/Css-store/cartegory.css">
    <link rel="stylesheet" href="src-store/Css-store/reset.css">
+   <link rel="stylesheet" href="base.css">
 </head>
 
 <body>
-   <div id="header" style="background-color: #f6f8fa">
-      <div class="header-inner">
-         <div class="logo">
-            <a title="Clerverfood" rel="home" style>Cleverfood</a>
-         </div>
-         <div cl>
-            <div class="nav">
-               <ul class="main-menu">
-                  <li><a href="">Trang Chủ </a></li>
-                  <li><a href="">Giới Thiệu</a></li>
-                  <li><a href="">Cửa Hàng</a></li>
-                  <li><a href="">Kiến Thức</a></li>
-                  <li><a href="">Liên Hệ</a></li>
-               </ul>
-            </div>
-         </div>
-         <div class="topnav">
-            <div class="search-container">
-               <form action="/action_page.php">
-                  <input type="text" placeholder="Search.." name="search">
-                  <button type="submit"><i class="fa fa-search"></i></button>
-               </form>
-            </div>
-            <div class="login-container">
-               <form action="/action_page.php">
-                  <button type="submit">Đăng Nhập <i class="fa-solid fa-user-large"></i></button>
-               </form>
-            </div>
-            <div class="shopping-container">
-               <form action="/action_page.php">
-                  <button type="submit">Giỏ Hàng <i class="fa-solid fa-cart-shopping"></i></button>
-               </form>
-            </div>
-         </div>
+   <header>
+      <a href="#" class="logo">Cleverfood</a>
+      <ul class="navigation">
+          <li><a href="#">Trang Chủ</a></li>
+          <li><a href="#">Giới Thiệu</a></li>
+          <li><a href="#">Cửa Hàng</a></li>
+          <li><a href="#">Kiến Thức</a></li>
+          <li><a href="#">Liên Hệ</a></li>
+      </ul>
+      <div class="search">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
       </div>
-   </div>
-   </div>
-   </div>
+      <div class="login">
+          <button type="submit"><i class="fa-solid fa-user-large"></i></button>
+      </div>
+      <div class="shopping">
+          <button type="submit"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+      <div class="toggle">
+          <i class="fas fa-bars"></i>
+      </div>
+      <div class="overlay"></div>
+  </header>
    <section class="cartegory">
       <div class="container">
          <div class="cartegory-top" style="display: flex;">
