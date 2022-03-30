@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto slab', sans-serif;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 100px;
+    z-index: 10 ;
+    background: #f6f8fa;
+}
+header .logo{
+
+    position: relative;
+    font-size: 35px;
+    color: #076623;
+    text-decoration: none;
+    font-weight: 600;
+}
+header .navigation{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+header .navigation li{
+    list-style: none;
+    margin: 0 10px;
+}
+header .navigation li a{
+    color: #5d665b;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-right: 20px;
+}
+header .navigation li a:hover{
+    color: rgb(12, 209, 5);
+}
+header .search{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    padding-left: 2px;
+    margin-left: 10px;
+}
+header .search input{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: transparent;
+    outline: none;
+    border: 1px solid #0f0f0f;
+    border-radius: 6px;
+    padding: 0 10px 0 45px;
+}
+header .search input::placeholder{
+    color: #0f0f0f;
+}
+header .search .fa-search{
+    position: absolute;
+    top: 35%;
+    transform: translate(-50%);
+    left: 20px;
+    color: #0f0f0f;
+    border-right: 1px solid #8d0101 ;
+    padding-right: 10px;
+}
+header .login{
+
+    width: 20px;
+    height: 20px;
+    padding-left: 0px;
+}
+header .login button{
+    
+    border: 1px solid #f5f0f0;
+}
+header .shopping button{
+    border: 1px solid #faf8f8;
+}
+header .shopping{
+    width: 20px;
+    height: 20px;
+    padding-left: 0px;
+}
+header .toggle{
+    background-color: #2b2e2a;
+    color: rgb(26, 24, 24);
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f6f8fa;
+    display: none;
+}
+header .toggle .fa-bars{
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%);
+    left: 50px;
+}
+
+@media (max-width: 868px){
+    header{
+        padding: 20px 30px;
+        flex-direction: column;
+    }
+    header .search{
+        position: relative;
+    }
+    
+}
+@media(max-width: 768px){
+    header .toggle{
+        display: block;
+        text-align: right;
+    }
+    header .navigation{
+
+        display: none;
+    }
+    header .login{
+        display: none;
+    }
+    header .shopping{
+        display: none;
+    }
+    header .search{
+        position: absolute;
+        top: 21%;
+        transform: translate(50%);
+        right: 100px;
+    }
+}
+@media(max-width: 425px){
+   
+    .header .search{
+      display: none;
+    }
+}
