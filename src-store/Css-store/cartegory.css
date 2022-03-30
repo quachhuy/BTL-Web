@@ -418,10 +418,7 @@ text-align: center;
 /* phần css cho phần đăng kí để nhận thông báo <3*/
 .end-of-body h2{
     position: absolute;
-    top: 190px;
     color: #333;
-    text-align: center;
-    right: 490.5px;
     font-family: "Roboto Slab", sans-serif;
 font-size: 37px;
 font-weight: 700;
@@ -429,17 +426,13 @@ line-height: 45.5px;
 }
 .end-of-body h3{
     position: absolute;
-    top: 235px;
     color: #333;
-    text-align: center;
-    right: 700px;
     font-size: 25px;
 }
 .end-of-body h1{
     position: absolute;
-    top:268px;
     color: #333;
-    text-align: center;
+
     right: 535px;
     font-family: "Roboto Slab", sans-serif;
 font-size: 20px;
@@ -510,8 +503,9 @@ line-height: 16.8px;
     background-image: url(/Img-store/img/wallpaperflare.com_wallpaper.jpg);
     min-width: 768px;
     width: 100%;
-    min-height: 408px;
+    min-height: 600px;
     height: 100%;
     background-repeat: no-repeat;
+    display: block;
 
 }
