@@ -9,12 +9,40 @@
     <link rel="stylesheet" href="../BTL/src-home/style-home.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap" rel="stylesheet">
 
     <title>CleverFood</title>
 </head>
 <body>
+    <header>
+        <a href="#" class="logo">Cleverfood</a>
+        <ul class="navigation">
+            <li><a href="#">Trang Chủ</a></li>
+            <li><a href="#">Giới Thiệu</a></li>
+            <li><a href="#">Cửa Hàng</a></li>
+            <li><a href="#">Kiến Thức</a></li>
+            <li><a href="#">Liên Hệ</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="login">
+            <button type="submit"><i class="fa-solid fa-user-large"></i></button>
+        </div>
+        <div class="shopping">
+            <button type="submit"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="overlay"></div>
+    </header>
     <!--start: slide-->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -41,7 +69,7 @@
             <div id="title-con1">
                 <p>Mua sản phẩm được lựa chọn từ vườn</p>
             </div>
-            <div class="col-md-2">
+            <div class="col l-4 m-4 c-6">
                 <div class="row">
                     <div id="img-con1" class="container">
                             <img id="img-product" src="../BTL/img-home/sp1.png" alt="">
@@ -51,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col l-4 m-4 c-6">
                 <div class="row">
                     <div id="img-con1" class="container">
                             <img id="img-product" src="../BTL/img-home/sp2.png" alt="">
@@ -61,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col l-4 m-4 c-6">
                 <div class="row">
                     <div id="img-con1" class="container">
                             <img id="img-product" src="../BTL/img-home/sp3.png" alt="">
@@ -71,7 +99,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col l-4 m-4 c-6">
                 <div class="row">
                     <div id="img-con1" class="container">
                             <img id="img-product" src="../BTL/img-home/sp4.png" alt="">
@@ -81,7 +109,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col l-4 m-4 c-6">
                 <div class="row">
                     <div id="img-con1" class="container">
                             <img id="img-product" src="../BTL/img-home/sp5.png" alt="">
@@ -91,7 +119,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col l-4 m-4 c-6">
                 <div class="row">
                     <div id="img-con1" class="container">
                             <img id="img-product" src="../BTL/img-home/sp6.png" alt="">
@@ -134,7 +162,94 @@
             <p>SẢN PHẨM NỔI BẬT</p>
         </div>
         <div id="row-product" class="row">
-            <div class="col-md-2">
+            <div id="card-product" class="col-md-2">
+                <div id="img-con3" class="row">
+                    <img src="../BTL/Img-store/img/product-11-470x470-300x300.jpg" alt="">
+                </div>
+                <div id="name-product" class="row">
+                    <p>Dừa sáp</p>
+                </div>
+                <div id="price" class="row">
+                    <p>35,000₫</p>
+                </div>
+                <div id="btn"  class="row">
+                    <a id="btn-con3" class="btn btn-primary" href="#" role="button">Mua ngay</a>
+                </div>
+            </div>
+            <div id="card-product" class="col-md-2">
+                <div id="img-con3" class="row">
+                    <img src="../BTL/Img-store/img/product-12-470x470-300x300.jpg" alt="">
+                </div>
+                <div id="name-product" class="row">
+                    <p>Chuôi</p>
+                </div>
+                <div id="price" class="row">
+                    <p>150,000₫</p>
+                </div>
+                <div id="btn"  class="row">
+                    <a id="btn-con3" class="btn btn-primary" href="#" role="button">Mua ngay</a>
+                </div>
+            </div>
+            <div  id="card-product" class="col-md-2">
+                <div id="img-con3" class="row">
+                    <img src="../BTL/Img-store/img/product-15-470x470-300x300.jpg" alt="">
+                </div>
+                <div id="name-product" class="row">
+                    <p>Chanh dây 1kg</p>
+                </div>
+                <div id="price" class="row">
+                    <p>235,000₫</p>
+                </div>
+                <div  id="btn" class="row">
+                    <a id="btn-con3" class="btn btn-primary" href="#" role="button">Mua ngay</a>
+                </div>
+            </div>
+            <div id="card-product" class="col-md-2">
+                <div id="img-con3" class="row">
+                    <img src="../BTL/Img-store/img/product-16-470x470-300x300.jpg" alt="">
+                </div>
+                <div id="name-product" class="row">
+                    <p>Dưa leo</p>
+                </div>
+                <div id="price" class="row">
+                    <p>71,600₫</p>
+                </div>
+                <div  id="btn" class="row">
+                    <a id="btn-con3" class="btn btn-primary" href="#" role="button">Mua ngay</a>
+                </div>
+            </div>
+            <div id="card-product" class="col-md-2">
+                <div id="img-con3" class="row">
+                    <img src="../BTL/Img-store/img/product-21-470x470-300x300.jpg" alt="">
+                </div>
+                <div id="name-product" class="row">
+                    <p>Ớt</p>
+                </div>
+                <div id="price" class="row">
+                    <p>29,000₫</p>
+                </div>
+                <div id="btn"  class="row">
+                    <a  id="btn-con3" class="btn btn-primary" href="#" role="button">Mua ngay</a>
+                </div>
+            </div>
+            <div id="card-product" class="col-md-2">
+                <div id="img-con3" class="row">
+                    <img src="../BTL/Img-store/img/product-22-470x470-300x300.jpg" alt="">
+                </div>
+                <div id="name-product" class="row">
+                    <p>Cà chua</p>
+                </div>
+                <div id="price" class="row">
+                    <p>84,000₫</p>
+                </div>
+                <div id="btn"  class="row">
+                    <a id="btn-con3" class="btn btn-primary" href="#" role="button">Mua ngay</a>
+                </div>
+            </div>
+           
+        </div>
+        <div id="row-product" class="row">
+            <div id="card-product" class="col-md-2">
                 <div id="img-con3" class="row">
                     <img src="../BTL/img-home/Tomsu.jpg" alt="">
                 </div>
@@ -144,39 +259,25 @@
                 <div id="price" class="row">
                     <p>181,000₫</p>
                 </div>
-                <div  class="row">
+                <div id="btn"  class="row">
                     <a id="btn-con3" class="btn btn-primary" href="#" role="button">Mua ngay</a>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div id="card-product" class="col-md-2">
                 <div id="img-con3" class="row">
-                    <img src="../BTL/img-home/Bosap.jpeg" alt="">
+                    <img src="../BTL/img-home/Caiboxoi.jpg" alt="">
                 </div>
                 <div id="name-product" class="row">
-                    <p>Bơ sáp</p>
+                    <p>Cải bó xôi</p>
                 </div>
                 <div id="price" class="row">
-                    <p>135,000₫</p>
+                    <p>20,000₫</p>
                 </div>
-                <div  class="row">
+                <div id="btn"  class="row">
                     <a id="btn-con3" class="btn btn-primary" href="#" role="button">Mua ngay</a>
                 </div>
             </div>
-            <div class="col-md-2">
-                <div id="img-con3" class="row">
-                    <img src="../BTL/img-home/Saurieng.jpg" alt="">
-                </div>
-                <div id="name-product" class="row">
-                    <p>Sầu riêng 1kg</p>
-                </div>
-                <div id="price" class="row">
-                    <p>235,000₫</p>
-                </div>
-                <div  class="row">
-                    <a id="btn-con3" class="btn btn-primary" href="#" role="button">Mua ngay</a>
-                </div>
-            </div>
-            <div class="col-md-2">
+            <div id="card-product" class="col-md-2">
                 <div id="img-con3" class="row">
                     <img src="../BTL/img-home/Catrac.jpg" alt="">
                 </div>
@@ -184,44 +285,54 @@
                     <p>Cá trác vàng</p>
                 </div>
                 <div id="price" class="row">
-                    <p>71,600₫</p>
+                    <p>181,000₫</p>
                 </div>
-                <div  class="row">
+                <div id="btn"  class="row">
                     <a id="btn-con3" class="btn btn-primary" href="#" role="button">Mua ngay</a>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div id="card-product" class="col-md-2">
                 <div id="img-con3" class="row">
-                    <img src="../BTL/img-home/Caiboxoi.jpg" alt="">
+                    <img src="../BTL/img-home/Saurieng.jpg" alt="">
                 </div>
                 <div id="name-product" class="row">
-                    <p>Cải bó xôi hữu cơ</p>
+                    <p>Sầu riêng</p>
                 </div>
                 <div id="price" class="row">
-                    <p>29,000₫</p>
+                    <p>100,000₫</p>
                 </div>
-                <div  class="row">
-                    <a  id="btn-con3" class="btn btn-primary" href="#" role="button">Mua ngay</a>
+                <div id="btn"  class="row">
+                    <a id="btn-con3" class="btn btn-primary" href="#" role="button">Mua ngay</a>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div id="card-product" class="col-md-2">
                 <div id="img-con3" class="row">
                     <img src="../BTL/img-home/thitheo.png" alt="">
                 </div>
                 <div id="name-product" class="row">
-                    <p>Thịt nạc đùi heo</p>
+                    <p>Thịt heo</p>
                 </div>
                 <div id="price" class="row">
-                    <p>84,000₫</p>
+                    <p>81,000₫</p>
                 </div>
-                <div  class="row">
+                <div id="btn"  class="row">
                     <a id="btn-con3" class="btn btn-primary" href="#" role="button">Mua ngay</a>
                 </div>
             </div>
-           
-        </div>
-        <div id="row-product" class="row">
-
+            <div id="card-product" class="col-md-2">
+                <div id="img-con3" class="row">
+                    <img src="../BTL/img-home/Bosap.jpeg" alt="">
+                </div>
+                <div id="name-product" class="row">
+                    <p>Bơ sáp</p>
+                </div>
+                <div id="price" class="row">
+                    <p>1000$</p>
+                </div>
+                <div id="btn"  class="row">
+                    <a id="btn-con3" class="btn btn-primary" href="#" role="button">Mua ngay</a>
+                </div>
+            </div>
         </div>
     </div>
     <!--end: container 3-->
