@@ -33,7 +33,7 @@ min-width: auto;
 .cartegory-right{
     display: block;
     height: 1005.45px;
-    width: 930px;
+    width: auto;
     padding: 0 15px 30px 15px;
     min-height: auto;
     max-width: 75%;
@@ -46,12 +46,11 @@ min-width: auto;
 
 .product{
     margin-top: 70px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
     padding-right: 2px;
     margin-left: 20px;
-    justify-content: space-between;
 }
 .products{
     width: calc(25%-12px);
@@ -59,7 +58,7 @@ min-width: auto;
     display: flex;
     flex-basis: 0.5%;
     height: 310.6px;
-    width: 230px;
+    width: auto;
     transition: 0.3s;
 }
 .products h1{
@@ -86,12 +85,9 @@ min-width: auto;
     color: #86BA09;
 }
 .products img{
-    height: 210.4px;
-    width: 210.4px;
+    height: auto;
+    width: auto;
     max-width: 100%; 
-}
-image{
-    max-width: 100%;
 }
 .cartergory-left-li a:hover{
     color: #fff;
@@ -381,7 +377,7 @@ line-height: 16.8px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-image: url(/Img-store/img/wallpaperflare.com_wallpaper.jpg);
+    background-image: url(/Img-store/img/);
     min-width: 768px;
     width: 100%;
     min-height: 408px;

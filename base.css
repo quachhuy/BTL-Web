@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,600;1,500&family=Roboto:wght@400;500&display=swap');
+body{
+
+    font-family: 'Roboto', sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +10,6 @@
     font-family: 'Roboto slab', sans-serif;
 }
 header{
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -15,11 +19,14 @@ header{
     padding: 35px 100px;
     z-index: 10 ;
     background: #f6f8fa;
+    position: fixed;
+    border-bottom:1px solid #f5f5f5 ;
+    opacity: 0.9;
 }
 header .logo{
 
     position: relative;
-    font-size: 35px;
+    font-size: 45px;
     color: #076623;
     text-decoration: none;
     font-weight: 600;
@@ -29,6 +36,7 @@ header .navigation{
     justify-content: center;
     flex-wrap: wrap;
     margin: 10px 0;
+    font-size: 20px;
 }
 header .navigation li{
     list-style: none;
@@ -136,15 +144,52 @@ header .toggle .fa-bars{
         display: none;
     }
     header .search{
-        position: absolute;
-        top: 21%;
-        transform: translate(50%);
-        right: 100px;
+        display: none;
     }
 }
-@media(max-width: 425px){
+
+/* footer */
+footer .container{
+    margin: auto;
+    max-width: 1170px;
+}
+footer .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer ul{
+    list-style: none;
+}
+.footer{
+    background-color: #f6f8fa;
    
-    .header .search{
-      display: none;
-    }
+    padding: 70px 0;
+    height: 1000px;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h1{
+    font-size:18px ;
+    color: #5d665b;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #0f0f0f;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
 }
