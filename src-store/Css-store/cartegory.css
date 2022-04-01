@@ -41,6 +41,8 @@ min-width: auto;
 .left-right{
     display: flex;
     margin-top: -85px;
+    width: auto;
+    max-width: 100%;
 }
 
 .product{
@@ -54,7 +56,6 @@ min-width: auto;
 .products{
     width: calc(25%-12px);
     text-align: center;
-    display: flex;
     flex-basis: 0.5%;
     height: 310.6px;
     width: auto;

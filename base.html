@@ -8,34 +8,48 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
             integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="base.css">
-        <link rel="stylesheet" href="js.js">    
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="base.css">   
     </head>
 
-    <body>
-        <header>
-            <a href="#" class="logo">Cleverfood</a>
-            <ul class="navigation">
-                <li><a href="#">Trang Chủ</a></li>
-                <li><a href="#">Giới Thiệu</a></li>
-                <li><a href="#">Cửa Hàng</a></li>
-                <li><a href="#">Kiến Thức</a></li>
-                <li><a href="#">Liên Hệ</a></li>
+<body>
+    <header>
+        <a href="#" class="logo">Cleverfood</a>
+        <ul class="navigation">
+            <li><a href="#">Trang Chủ</a></li>
+            <li><a href="#">Giới Thiệu</a></li>
+            <li><a href="#">Cửa Hàng</a></li>
+            <li><a href="#">Kiến Thức</a></li>
+            <li><a href="#">Liên Hệ</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="login">
+            <button type="submit"><i class="fa-solid fa-user-large"></i></button>
+        </div>
+        <div class="shopping">
+            <button type="submit"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <label for="nav-mobile-input" class="toggle">
+            <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" hidden name="" class="nav-input" id="nav-mobile-input">
+    
+        <label for="nav-mobile-input" class="overlay"></label>
+        <div class="mobile">
+            <label for="nav-mobile-input" class="nav-mobile-close" >
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <ul class="nav-mobile">
+                <li><a href="#" class="nav-mobile-link">Trang Chủ</a></li>
+                <li><a href="#" class="nav-mobile-link">Giới Thiệu</a></li>
+                <li><a href="#" class="nav-mobile-link">Cửa Hàng</a></li>
+                <li><a href="#" class="nav-mobile-link">Kiến Thức</a></li>
+                <li><a href="#" class="nav-mobile-link">Liên Hệ</a></li>
             </ul>
-            <div class="search">
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </div>
-            <div class="login">
-                <button type="submit"><i class="fa-solid fa-user-large"></i></button>
-            </div>
-            <div class="shopping">
-                <button type="submit"><i class="fa-solid fa-cart-shopping"></i></button>
-            </div>
-            <div class="toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <div class="overlay"></div>
-        </header>
-    </body >
+        </div>    
+    </header>
+</body >
 </html>

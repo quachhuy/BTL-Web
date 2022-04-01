@@ -2,19 +2,12 @@
     .cartergory-left{
         display: none;
     }
-    .product{
-        display: flex;
-        text-align: center;
-    }
     .products{
         flex-basis: 35%;
-        width: 36px;
-        height: 250px;
+        width: 25px;
+        height: 200px;
     }
     .text-product{
-        width: 150px;
-    }
-    .cartegory-top{
-        margin-left: 35px;
+        width: 105px;
     }
 }
