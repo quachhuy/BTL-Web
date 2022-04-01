@@ -10,4 +10,13 @@
     .text-product{
         width: 105px;
     }
+    .Pagination-container{
+        margin-left: 20px;
+    }
+    #text-end{
+        display: none;
+    }
+    .cartegory-top{
+        margin-left: 25px;
+    }
 }

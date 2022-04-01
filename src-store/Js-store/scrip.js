@@ -10,7 +10,7 @@ $("#btnRegister").click(function(e){
     e.preventDefault();
     if(checkEmail()){
         $("#statusOfEmail").text('Email của bạn chuẩn xác.Vui lòng kiểm tra hòm thư của bạn')
-        $("#statusOfEmail").css('color','#00FFFF')
+        $("#statusOfEmail").css('color','#5BC750')
         $(".status").css('background','#f1f1f1')
 
     }else{
