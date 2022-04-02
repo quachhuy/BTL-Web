@@ -17,6 +17,9 @@
         display: none;
     }
     .cartegory-top{
-        margin-left: 25px;
+        margin-left: 15px;
     }
+}
+@media (max-width: 768px){
+    
 }
