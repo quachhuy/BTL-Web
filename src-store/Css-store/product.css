@@ -1,3 +1,240 @@
-.clearfix img{
-    width: 30px;
+
+.product-content-left img{
+    width: 90%;
+    height: 90%;
+}
+.breadcrumb-item{
+    font-family: "Roboto Slab", sans-serif;
+font-size: 15px;
+font-weight: 700;
+line-height: 21.76px;
+
+}
+.breadcrumb-item a{
+    text-decoration: none;
+    color: rgb(29, 26, 26);
+}
+.product-content-right-product-name h1{
+    font-family: "Roboto Slab", sans-serif;
+font-size: 27.2px;
+font-weight: 700;
+line-height: 35.36px;
+}
+.product-content-right-product-price{
+    font-family: "Roboto Slab", sans-serif;
+font-size: 24px;
+font-weight: 700;
+line-height: 28.8px;
+color:  #86BA09;
+}
+.split{
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+.description h1{
+    font-family: "Roboto Slab", sans-serif;
+font-size: 18px;
+line-height: 25.6px;
+}
+.buttons_added {
+    opacity:1;
+    display:inline-block;
+    display:-ms-inline-flexbox;
+    display:inline-flex;
+    white-space:nowrap;
+    vertical-align:top;
+}
+.is-form {
+    overflow:hidden;
+    position:relative;
+    background-color:#f9f9f9;
+    height:2.2rem;
+    width:1.9rem;
+    padding:0;
+    text-shadow:1px 1px 1px #fff;
+    border:1px solid #ddd;
+}
+.is-form:focus,.input-text:focus {
+    outline:none;
+}
+.is-form.minus {
+    border-radius:4px 0 0 4px;
+}
+.is-form.plus {
+    border-radius:0 4px 4px 0;
+}
+.input-qty {
+    background-color:#fff;
+    height:2.2rem;
+    text-align:center;
+    font-size:1rem;
+    display:inline-block;
+    vertical-align:top;
+    margin:0;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    border-left:0;
+    border-right:0;
+    padding:0;
+}
+.input-qty::-webkit-outer-spin-button,.input-qty::-webkit-inner-spin-button {
+    -webkit-appearance:none;
+    margin:0;
+}
+.Button-group button{
+    height: 35px;
+    margin-left: 10px;
+    width: 20%;
+}
+.Button-group{
+    margin-top: 20px;
+}
+.related{
+    margin-top: 10px;
+}
+.type{
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 21.76px;
+    margin-top: 50px;
+}
+.share{
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 21.76px;
+    margin-top: 50px;
+}
+.fa-facebook {  
+    background: #3B5998;  
+    color: white;  
+  }  
+  .fa-twitter {  
+    background: #55ACEE;  
+    color: white;  
+  }  
+.related-item{
+  margin-top: 70px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 2px;
+    margin-left: 20px;
+}
+.related-text{
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 21.76px;
+    margin-top: 40px;
+    margin-bottom: -20px;
+}
+.related{
+    border-top: 2px solid #bbb4b4;
+    margin-top: 50px;
+}
+.content{
+    margin-top: 150px;
+}
+.products{
+    width: calc(25%-12px);
+    text-align: center;
+    flex-basis: 0.5%;
+    height: 310.6px;
+    width: auto;
+    transition: 0.3s;
+}
+.products h1{
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 14.4px;
+    font-weight: 700;
+    line-height: 18.72px;
+    text-decoration: none solid rgb(134, 186, 9);
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    color: #353535;
+    margin: 1.44px 0px 11.52px;
+}
+.products p{
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 14.4px;
+    font-weight: 700;
+    line-height: 17.28px;
+    text-decoration: none solid rgb(134, 186, 9);
+    text-align: center;
+    white-space: nowrap;
+    word-spacing: 0px;
+    color: #86BA09;
+}
+.products img{
+    height: auto;
+    width: auto;
+    max-width: 100%; 
+}
+.products h1:hover{
+    color: #86BA09;
+}
+.products a{
+    text-decoration: none;
+}
+.text-product {
+    height: 80.6px;
+    width: 210.4px;
+    padding: 10px 10px 20px 10px;
+    display: block;
+    border-left: 1px dotted #cec0c5;
+    border-right: 1px dotted #cec0c5;
+    border-bottom: 1px dotted #cec0c5;
+}
+.products:hover{
+    transform: scale(0.9);
+    box-shadow:20px 20px 35px 7px grey;
+    border-radius: 30px;
+}
+@media (max-width: 480px) {
+    .main{
+        flex-direction: column;
+    }
+    #text-end{
+        display: none;
+    }
+    .products{
+        height: 200px;
+    }
+    .type{
+        font-size: 18px;
+    }
+    .content{
+        margin-top: 100px;
+    }
+    .buttons_added input{
+        width: 60px;
+        height: 60px;
+    }
+    .Button-group button{
+        width: 130px;
+        height: 60px;
+    }
+}
+@media (max-width: 768px) {
+    .main{
+        flex-direction: column;
+    }
+    .content{
+        margin-top: 100px;
+    }
+    .buttons_added input{
+        width: 60px;
+        height: 60px;
+    }
+    .Button-group button{
+        width: 130px;
+        height: 60px;
+    }
+    .type{
+        font-size: 18px;
+    }
 }
