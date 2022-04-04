@@ -198,12 +198,13 @@ line-height: 25.6px;
     .main{
         flex-direction: column;
     }
-    #text-end{
-        display: none;
-    }
     .products{
-        height: 200px;
+        height: 180px;
     }
+    .text-product{
+        width: 100%;
+    }
+    
     .type{
         font-size: 18px;
     }

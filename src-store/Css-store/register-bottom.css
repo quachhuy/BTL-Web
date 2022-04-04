@@ -99,7 +99,30 @@ font-weight: 100%;
     padding-bottom: 200px;
 }
 @media (max-width: 480px){
-    .text-product{
-        width: 105px;
+    .end-of-body h2{
+        font-size: 35px;
+    }
+    .end-of-body h3{
+        font-size: 30px;
+    }
+    .end-of-body h1{
+        font-size: 24px
+
+    }
+    #btnRegister{
+        width: 80px;
+    }
+    .email input{
+        width: 220px;
+    }
+    #text-end{
+        width: auto;
+        margin-top: -50px;
+        margin-bottom: -50px;
+        background-size: 200%;
+    }
+    .status{
+        width: 220px;
+        height: 50px;
     }
 }
