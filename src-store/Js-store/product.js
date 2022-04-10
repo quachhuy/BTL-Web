@@ -3,7 +3,7 @@ $('input.input-qty').each(function() {
       qty = $this.parent().find('.is-form'),
       min = Number($this.attr('min')),
       max = Number($this.attr('max'))
-    var d = 0
+    var d = 1
     $(qty).on('click', function() {
       if ($(this).hasClass('minus')) {
         if (d > min) d += -1
