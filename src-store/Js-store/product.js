@@ -8,9 +8,8 @@ $('input.input-qty').each(function() {
       if ($(this).hasClass('minus')) {
         if (d > min) d += -1
       } else if ($(this).hasClass('plus')) {
-        var x = Number($this.val()) + 1
-        if (x <= max) d += 1
+        if (d < max) d += 1
       }
-      $this.val(d)
+      $this.attr('value',d)
     })
   })
