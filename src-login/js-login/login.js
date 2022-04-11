@@ -22,4 +22,11 @@ $('.form-submit').click(function(e){
             button: "OK",
           });
     }
+    else{
+        swal({
+            title: "Bạn đăng nhập thành công!",
+            icon: "success",
+            button: "OK",
+          });
+    }
 })
