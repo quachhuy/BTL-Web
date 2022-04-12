@@ -22,11 +22,7 @@ $('.form-submit').click(function(e){
             button: "OK",
           });
     }
-    else{
-        swal({
-            title: "Bạn đăng nhập thành công!",
-            icon: "success",
-            button: "OK",
-          });
+    if (username == 'admin' && password == '12345'){
+        window.location.href = 'CleverFood-home.html';
     }
 })
