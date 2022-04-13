@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { 
     List,
     Datagrid, 
@@ -7,17 +8,18 @@ import {
     EditButton,
     DeleteButton,
     TextInput,
-    Create } 
+    Create,
+    DateInput,
+    EmailField} 
     from "react-admin"
 export const listUsers = (props) => (
     <List {...props} >
         <Datagrid>
             <TextField source='name' />
-            <TextField source='Company' />
-            <TextField source='DateStart' />
+            <EmailField source='Email' />
+            <TextField source='published_at' />
             <EditButton basePath="/users" />
             <DeleteButton basePath="/users"/>
-
         </Datagrid>
     </List>
 )
@@ -26,8 +28,8 @@ export const editUser = (props) =>(
     <Edit {...props}>
         <SimpleForm>
             <TextInput source='name' />
-            <TextField source='Company' />
-            <TextField source='DateStart' />
+            <TextInput source='Email' />
+            <DateInput source='published_at' />
         </SimpleForm>
     </Edit>
 )
@@ -35,8 +37,8 @@ export const createUser = (props) =>(
     <Create {...props}>
         <SimpleForm>
             <TextInput source='name' />
-            <TextField source='Company' />
-            <TextField source='DateStart' />
+            <TextInput source='Email' />
+            <DateInput source='published_at' />
         </SimpleForm>
     </Create>
 )

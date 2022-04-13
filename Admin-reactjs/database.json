@@ -2,53 +2,70 @@
   "products": [
     {
       "id": "1",
-      "name": "Huy",
-      "brand": "Huy",
-      "price": "vo gia"
+      "name": "Rau cải",
+      "price": "1000$",
+      "provider": "Nong san sach"
     },
     {
-      "id": "1",
-      "name": "Duy",
-      "brand": "Duy",
-      "price": "2k$"
+      "id": "2",
+      "name": "Cá",
+      "price": "10$",
+      "provider": "Nong san sach"
     },
     {
-      "id": "1",
-      "name": "Huy",
-      "brand": "Huy",
-      "price": "1$"
+      "id": "3",
+      "name": "Rau muống",
+      "price": "1000$",
+      "provider": "Nong san sach"
     },
     {
-      "name": "hieeus",
-      "brand": "ngu",
-      "price": "vcl",
-      "id": "c8-0Qg3"
+      "id": "4",
+      "name": "Bơ",
+      "price": "1000$",
+      "provider": "Nong san sach"
+    },
+    {
+      "id": "5",
+      "name": "Nước gạo Hàn Quốc",
+      "price": "1$",
+      "provider": "Nong san sach"
+    },
+    {
+      "id": "6",
+      "name": "Thịt hổ",
+      "price": "10$",
+      "provider": "Nong san sach"
+    },
+    {
+      "id": "7",
+      "name": "Cà Chua",
+      "price": "23$",
+      "provider": "Nong san sach"
     }
   ],
   "users": [
     {
       "id": "1",
-      "name": "Huy",
-      "Company": "TNHH ",
-      "DateStart":"16/04/2002"
+      "name": "Quách Xuân Huy",
+      "Email": "quachhuy2002@gmail.com",
+      "published_at": "16/04/2002"
     },
     {
       "id": "2",
-      "name": "QuachXuanHuy",
-      "Company": "TNHH ",
-      "DateStart":"16/04/2002"
+      "name": "Mai Ngọc Duy",
+      "Email": "maingocduy@gmail.com",
+      "published_at": "02/04/2022"
     },
     {
       "id": "3",
-      "name": "NguyenTheHieu",
-      "Company": "TNHH ",
-      "DateStart":"16/04/2002"
+      "name": "Nguyễn Thế Hiếu",
+      "Email": "nguyenthehieu@gmail.com",
+      "published_at": "03/04/2022"
     },
     {
-      "id": "4",
-      "name": "MaiNgocDuy",
-      "Company": "TNHH",
-      "DateStart":"16/04/2002"
+      "name": "fdfa",
+      "Email": "asdas@gamil.com",
+      "id": "scwQPes"
     }
   ]
 }
