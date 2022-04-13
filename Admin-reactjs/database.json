@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Huy",
+      "brand": "Huy",
+      "price": "vo gia"
+    },
+    {
+      "id": "1",
+      "name": "Duy",
+      "brand": "Duy",
+      "price": "2k$"
+    },
+    {
+      "id": "1",
+      "name": "Huy",
+      "brand": "Huy",
+      "price": "1$"
+    },
+    {
+      "name": "hieeus",
+      "brand": "ngu",
+      "price": "vcl",
+      "id": "c8-0Qg3"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Huy",
+      "Company": "TNHH ",
+      "DateStart":"16/04/2002"
+    },
+    {
+      "id": "2",
+      "name": "QuachXuanHuy",
+      "Company": "TNHH ",
+      "DateStart":"16/04/2002"
+    },
+    {
+      "id": "3",
+      "name": "NguyenTheHieu",
+      "Company": "TNHH ",
+      "DateStart":"16/04/2002"
+    },
+    {
+      "id": "4",
+      "name": "MaiNgocDuy",
+      "Company": "TNHH",
+      "DateStart":"16/04/2002"
+    }
+  ]
+}
