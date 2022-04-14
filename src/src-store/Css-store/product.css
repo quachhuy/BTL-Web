@@ -220,7 +220,7 @@ line-height: 25.6px;
         height: 60px;
     }
 }
-@media (max-width: 768px) {
+@media (min-width:481px) and (max-width: 1024px) {
     .main{
         flex-direction: column;
     }
