@@ -123,7 +123,7 @@ header .toggle .fa-bars{
     transform: translate(-50%);
     left: 50px;
 }
- .overlay{
+.overlay{
     position: fixed;
     top: 0;
     right: 0;
@@ -140,7 +140,7 @@ header .toggle .fa-bars{
     bottom: 0;
     width: 320px;
     max-width: 100%;
-    background-color: #ffff;
+    background-color: #fff ;
     transform:translateX(-100%);
     transition: transform linear 0.3s;
 }

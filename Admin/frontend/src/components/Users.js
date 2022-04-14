@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useMediaQuery } from '@mui/material';
 import { 
     List,
     Datagrid, 
@@ -10,10 +10,21 @@ import {
     TextInput,
     Create,
     DateInput,
-    EmailField} 
+    EmailField,ReferenceInput,
+    SelectInput,SimpleList} 
     from "react-admin"
-export const listUsers = (props) => (
-    <List {...props} >
+
+   
+
+    const usersFilters = [
+        <TextInput source="q" label="Search" alwaysOn />,
+        <ReferenceInput source="name" label="Users" reference="users">
+            <SelectInput optionText="name" />
+        </ReferenceInput>,
+    ]
+   
+    export const listUsers = (props) => (
+    <List {...props} filters={usersFilters} >
         <Datagrid>
             <TextField source='name' />
             <EmailField source='Email' />

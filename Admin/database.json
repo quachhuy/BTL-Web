@@ -1,12 +1,6 @@
 {
   "products": [
     {
-      "id": "1",
-      "name": "Rau cải",
-      "price": "1000$",
-      "provider": "Nong san sach"
-    },
-    {
       "id": "2",
       "name": "Cá",
       "price": "10$",
@@ -45,27 +39,19 @@
   ],
   "users": [
     {
-      "id": "1",
-      "name": "Quách Xuân Huy",
-      "Email": "quachhuy2002@gmail.com",
-      "published_at": "16/04/2002"
-    },
-    {
-      "id": "2",
-      "name": "Mai Ngọc Duy",
-      "Email": "maingocduy@gmail.com",
-      "published_at": "02/04/2022"
-    },
-    {
-      "id": "3",
-      "name": "Nguyễn Thế Hiếu",
-      "Email": "nguyenthehieu@gmail.com",
-      "published_at": "03/04/2022"
-    },
-    {
       "name": "fdfa",
       "Email": "asdas@gamil.com",
       "id": "scwQPes"
+    },
+    {
+      "name": "huy",
+      "Email": "quachhuy2@gamil.com",
+      "id": "UX0gfXY"
+    },
+    {
+      "name": "Huy",
+      "Email": "huy@gmai.com",
+      "id": "iAfB3Au"
     }
   ]
 }

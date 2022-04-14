@@ -7,10 +7,18 @@ import {
     EditButton,
     DeleteButton,
     TextInput,
-    Create,} 
+    Create,
+    ReferenceInput,
+    SelectInput} 
     from "react-admin"
+    const productsFilters = [
+        <TextInput source="q" label="Search" alwaysOn />,
+        <ReferenceInput source="id" label="Provider" reference="products">
+            <SelectInput optionText="name" />
+        </ReferenceInput>,
+    ];
 export const listProducts = (props) => (
-    <List {...props} >
+    <List {...props} filters={productsFilters} >
         <Datagrid>
             <TextField source='name' />
             <TextField source='price' />
