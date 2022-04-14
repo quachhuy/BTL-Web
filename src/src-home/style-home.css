@@ -15,7 +15,6 @@ $grid-breakpoints: (
     font-family: 'Roboto slab', sans-serif;
 }
 header{
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -25,11 +24,14 @@ header{
     padding: 35px 100px;
     z-index: 10 ;
     background: #f6f8fa;
+    position: fixed;
+    border-bottom:1px solid #f5f5f5 ;
+    opacity: 0.9;
 }
 header .logo{
 
     position: relative;
-    font-size: 35px;
+    font-size: 45px;
     color: #076623;
     text-decoration: none;
     font-weight: 600;
@@ -39,6 +41,7 @@ header .navigation{
     justify-content: center;
     flex-wrap: wrap;
     margin: 10px 0;
+    font-size: 16px;
 }
 header .navigation li{
     list-style: none;
@@ -119,7 +122,66 @@ header .toggle .fa-bars{
     transform: translate(-50%);
     left: 50px;
 }
+ .overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+    animation: fadeIn linear 0.3s;
+}
+.mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #ffff;
+    transform:translateX(-100%);
+    transition: transform linear 0.3s;
+}
+.nav-mobile{
+   margin-top: 24px;
 
+}
+.nav-mobile li a{
+    text-align: center;
+}
+.nav-mobile-link{
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 0;
+    font-size: 15px;
+
+}
+.nav-mobile-close{
+    width: 28px;
+    height: 20px;
+    font-size: 1.4rem;
+    color: #333;
+    position: absolute;
+    top: 1rem;
+    right: 1rem
+    ;
+}
+.nav-input:checked ~ .overlay{
+   display: block;
+}
+.nav-input:checked ~ .mobile{
+    transform: translateX(0%);
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 @media (max-width: 868px){
     header{
         padding: 20px 30px;
@@ -130,7 +192,7 @@ header .toggle .fa-bars{
     }
     
 }
-@media(max-width: 767px){
+@media(max-width: 768px){
     header .toggle{
         display: block;
         text-align: right;
@@ -146,24 +208,10 @@ header .toggle .fa-bars{
         display: none;
     }
     header .search{
-        position: absolute;
-        top: 21%;
-        transform: translate(50%);
-        right: 100px;
-    }
-    #inputsearch{
         display: none;
-        margin-right: 0px;
     }
-    
 }
-@media(max-width: 469px){
-   
-    .search{
-      display: none;
-    }
-   
-}
+
 
 /* css for body */
 *{
